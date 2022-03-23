@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>FoodStore</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="searchbar">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search restaurant..."
+        />
+
+        <img src="images/bookmark.png" alt="bookmark" id="favorites" />
+      </div>
+      <div class="sortings">
+        <select name="ratings" id="ratings" onchange="sortByRatings()">
+          <option value="">Sort by ratings</option>
+          <option value="3">3.0</option>
+          <option value="4">4.0</option>
+          <option value="5">5.0</option>
+        </select>
+        <select name="tags" id="tags" onchange="sortBy()">
+          <option value="">Sort by tags</option>
+          <option value="indian">indian</option>
+          <option value="mexican">mexican</option>
+          <option value="american">american</option>
+          <option value="south-indian">south-indian</option>
+          <option value="north-indian">north-indian</option>
+          <option value="thai">thai</option>
+          <option value="african">african</option>
+          <option value="veg">veg</option>
+          <option value="non-veg">non-veg</option>
+        </select>
+      </div>
+      <div class="restaurants"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

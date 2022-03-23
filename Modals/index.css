@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #cc586b;
+  text-align: center;
+  margin: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.buttonsforModals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttonsforModals .modal-btn {
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #006eff;
+  background-color: #006eff;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-in;
+  transition: -webkit-box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in, -webkit-box-shadow 0.2s ease-in;
+}
+
+.buttonsforModals .modal-btn:hover {
+  -webkit-box-shadow: 10px 10px 1px rgba(109, 172, 255, 0.507);
+          box-shadow: 10px 10px 1px rgba(109, 172, 255, 0.507);
+}
+
+.modal {
+  border: 2px solid #e2e2e2;
+  width: 30vw;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  border-radius: 5px;
+  background-color: white;
+  display: none;
+  -webkit-animation-name: animatetop;
+          animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+
+.modal h2 {
+  font-size: clamp(1.3rem, 2vw, 2.1rem);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.modal .modal__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.modal .modal__container .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal .modal__container .label h4 {
+  font-size: clamp(1.1rem, 1.2vw, 1.3rem);
+  font-family: "Roboto", sans-serif;
+  color: #242424;
+  margin-bottom: 0.2rem;
+  font-weight: 300;
+}
+
+.modal .modal__container .label input {
+  padding: 0.5rem;
+  border-radius: 2px;
+  border: 1px solid #ececec;
+  background-color: #f8f8f8;
+  outline-width: 0;
+}
+
+.modal .modal__container .signup {
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
+  padding: 0.5rem;
+  border-radius: 2px;
+  border: 2px solid #181717;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal .modal__container .signup:hover {
+  background-color: #181717;
+  color: white;
+  cursor: pointer;
+}
+
+.modal .modal__container .signupwgoogle {
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
+  padding: 0.5rem;
+  border-radius: 2px;
+  border: 2px solid #0062f5;
+  color: #0062f5;
+  background-color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal .modal__container .signupwgoogle:hover {
+  background-color: #0062f5;
+  color: white;
+  cursor: pointer;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 25%;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 25%;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=index.css.map */

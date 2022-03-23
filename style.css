@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-1, .container-2, .container-3,.container-4, .container-5{
+    border: 2px solid black;
+    width: 75%;
+    margin: auto;
+}
+
+.container-1 h1,
+.container-2 h1,
+.container-3 h1,
+.container-4 h1,
+.container-5 h1,
+.container-5 h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+}
+
+#clickme{
+    flex: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+#generatecats{
+    border: 1px solid black;
+    display: flex;
+    margin: auto;
+}
+
+#reset{
+    flex: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.cats{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.cats img{
+    margin: 10px;
+    box-shadow: 2px 2px 15px rgb(53, 53, 53);
+}
+
+.rps-main-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.rps-main-div img{
+    width: 150px;
+    height: 150px;
+    /* box-shadow: 0 10px 50px rgb(0, 47, 255); */
+    cursor: pointer;
+}
+
+.rps-main-div img:hover{
+    box-shadow: 0 10px 50px rgb(0, 47, 255);
+}
+
+#colors{
+    font-size: 17px;
+    padding: 5px;
+}
+
+.buttons-area{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.row-1{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    background-image: url(/images/blackjack_background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.your-part{
+    flex: 50%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.your-part h2{
+    padding: 15px 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid black;
+    color: white;
+}
+
+.dealer-part{
+    flex: 50%;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.dealer-part h2{
+    padding: 15px 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid black;
+    color: white;
+}
+
+.blackjack-btns,
+.score-count-template{
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    padding: 20px 0;
+}
+
+.row-2{
+    background-image: url(/images/blackjack_background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+table, 
+th,
+td{
+    border: 1px solid black;
+}
+
+.your-cards,
+.dealer-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.your-cards img,
+.dealer-cards img{
+    width: 130px;
+    height: 180px;
+    margin: 10px;
+}

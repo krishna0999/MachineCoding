@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main__container {
+  display: flex;
+  height: 100vh;
+}
+
+.container1,
+.container2,
+.container3 {
+  border: 2px solid red;
+  overflow-y: scroll;
+}
+
+.container1 {
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+}
+
+.container2 {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+}
+
+.container3 {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.container1 .mail {
+  width: 100%;
+  border: 1px solid gray;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.2rem;
+  cursor: pointer;
+}
+
+.container1 .mail > h3 {
+  font-size: clamp(1rem, 1.4vw, 1.5rem);
+}
+
+.container2 .mails {
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+  padding: 0.5rem 0.3rem;
+  border: 1px solid gray;
+}
+
+.subject {
+  flex: 0.1;
+  border: 2px solid red;
+}
+
+.date {
+  border: 2px solid red;
+  flex: 0.05;
+}
+
+.author {
+  border: 2px solid red;
+  flex: 0.1;
+}
+
+.body {
+  border: 2px solid red;
+  flex: 0.75;
+}
